@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    @apply text-gray-900;
+    @apply bg-gray-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium leading-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  p, li {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply container max-w-3xl mx-auto px-4 md:px-6;
+  }
+  
+  .container-wide {
+    @apply container max-w-6xl mx-auto px-4 md:px-6;
+  }
+  
+  .btn {
+    @apply px-4 py-2 rounded-md transition-all duration-200 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 hover:bg-gray-100 text-gray-700;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden;
+  }
+  
+  .reader-container {
+    @apply max-w-3xl mx-auto px-4 md:px-0 py-8 md:py-12;
+  }
+  
+  .reader-content {
+    @apply prose prose-lg max-w-none;
+  }
+  
+  .reader-content h1 {
+    @apply text-3xl md:text-4xl font-semibold mb-6;
+  }
+  
+  .reader-content h2 {
+    @apply text-2xl md:text-3xl font-medium mt-10 mb-4;
+  }
+  
+  .reader-content p {
+    @apply text-lg leading-relaxed mb-6 text-gray-800;
+  }
+  
+  .reader-content img {
+    @apply my-8 rounded-lg;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 text-gray-700 hover:text-primary-600 transition-colors duration-150;
+  }
+  
+  .nav-link-active {
+    @apply px-3 py-2 text-primary-600 font-medium;
+  }
+}
+
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
