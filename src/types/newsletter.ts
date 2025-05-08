@@ -11,4 +11,5 @@ export interface Newsletter {
   frequency: string;
   created_at?: string;
   updated_at?: string;
+  rss_url?: string;
 }
