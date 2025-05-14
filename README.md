@@ -1,6 +1,6 @@
 # Papertrail - Your Newsletter Hub
 
-![Papertrail Logo](/public/papertrail.svg)
+<img src="/public/papertrail.svg" alt="Papertrail Logo" width="100" height="100">
 
 Papertrail is a modern web application that helps users discover, organize, and read newsletters in one centralized platform. Say goodbye to cluttered inboxes and hello to a clean, distraction-free reading experience.
 
